@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา</p>
+
+    <nav aria-label="เมนูหลัก">
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html" class="active">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="login-main">
+
+    <section class="premium-login">
+
+        <!-- ฝั่งรูปภาพ -->
+        <div class="premium-image">
+            <img src="images/aomanow.jpg" alt="บรรยากาศอ่าวมะนาว">
+
+            <div class="image-overlay">
+                <span class="gold-line"></span>
+                <p class="image-small">DISCOVER PRAchuap KHIRI KHAN</p>
+                <h1>ค้นพบความงดงาม<br>ของบ้านเรา</h1>
+                <p>
+                    ทุกการเดินทางมีเรื่องราว
+                    และทุกสถานที่มีความประทับใจรอคุณอยู่
+                </p>
+                <span class="image-bottom">TRAVEL • EXPLORE • EXPERIENCE</span>
+            </div>
+        </div>
+
+        <!-- ฝั่งเข้าสู่ระบบ -->
+        <div class="premium-form">
+
+            <div class="form-logo">เที่ยวบ้านเรา</div>
+
+            <p class="form-welcome">WELCOME BACK</p>
+
+            <h2>ยินดีต้อนรับกลับมา</h2>
+
+            <p class="form-description">
+                เข้าสู่ระบบเพื่อเริ่มต้นการเดินทางครั้งใหม่ของคุณ
+            </p>
+
+            <form id="loginForm">
+
+                <label for="username">ชื่อผู้ใช้งาน</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="กรอกชื่อผู้ใช้งาน"
+                    required
+                >
+
+                <label for="password">รหัสผ่าน</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="กรอกรหัสผ่าน"
+                    required
+                >
+
+                <div class="login-options">
+                    <label class="remember">
+                        <input type="checkbox">
+                        จดจำฉันไว้
+                    </label>
+
+                    <a href="#" onclick="alert('กรุณาติดต่อผู้ดูแลเว็บไซต์'); return false;">
+                        ลืมรหัสผ่าน?
+                    </a>
+                </div>
+
+                <button type="submit" class="premium-button">
+                    เข้าสู่ระบบ
+                </button>
+
+            </form>
+
+            <div class="form-divider">
+                <span>หรือ</span>
+            </div>
+
+            <button type="button" class="create-account"
+            onclick="alert('ระบบสมัครสมาชิกยังไม่เปิดใช้งาน')">
+                สร้างบัญชีใหม่
+            </button>
+
+            <p class="form-footer">
+                YOUR JOURNEY BEGINS HERE
+            </p>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>จัดทำโดยทักษพร051</p>
+    <p>ใบงานฝึกปฏิบัติวิชาการสร้างเว็บไซต์ทางธุรกิจ</p>
+</footer>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("ระบบเข้าสู่ระบบยังไม่ได้เชื่อมต่อฐานข้อมูล");
+});
+</script>
+
+</body>
+</html>
